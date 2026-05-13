@@ -3,30 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Türkçe Karakter Sorunları | SEO Slug Oluşturucu</title>
-  <meta name="description" content="URL'lerde Türkçe karakter kullanımı neden sorun çıkarır ve nasıl çözülür?">
+  <title>URL'lerde Türkçe Karakter Sorunları ve Çözümleri | SEO Slug Oluşturucu</title>
+  <meta name="description" content="ş, ğ, ç, ö, ü, ı gibi Türkçe karakterlerin URL'lerde neden sorun çıkardığını ve nasıl çözüleceğini öğrenin.">
   <link rel="canonical" href="https://polatozaslan21.github.io/slugolusturucu/blog2.html">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header"><div class="container"><a href="index.html" class="logo">← Araca Dön</a></div></header>
-  <main class="container" style="padding-top:2rem;padding-bottom:3rem;max-width:720px">
-    <h1 style="color:#01696f;margin-bottom:1rem">URL'lerde Türkçe Karakter Sorunları</h1>
-    <p>ğ, ş, ı, ö, ü, ç gibi Türkçe karakterler URL'lerde percent-encoding ile kodlanır: <code>%C5%9F</code> gibi. Bu hem okunaksız hem de paylaşımda sorun çıkarır.</p>
-    <h2 style="margin:1.5rem 0 0.75rem">Dönüşüm Tablosu</h2>
-    <table style="width:100%;border-collapse:collapse;font-size:0.95rem">
-      <thead><tr style="background:#e8f4f4"><th style="padding:.5rem;border:1px solid #ddd">Türkçe</th><th style="padding:.5rem;border:1px solid #ddd">URL Karşılığı</th></tr></thead>
+  <main class="container" style="padding-top:2rem;padding-bottom:3rem;max-width:740px">
+    <div style="font-size:.8rem;color:#888;margin-bottom:1rem">Mayıs 2026 · 5 dk okuma · Teknik SEO</div>
+    <h1 style="color:#01696f;margin-bottom:1rem">URL'lerde Türkçe Karakter Sorunları ve Çözümleri</h1>
+    <p>Türkçe içerik üreten web sitelerinin karşılaştığı en yaygın teknik sorunlardan biri URL'lerdeki Türkçe karakterlerdir. ş, ğ, ç, ö, ü ve ı harfleri standart ASCII karakter setinin dışında olduğundan URL'lerde özel bir kodlamaya dönüşür.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Percent-Encoding Nedir?</h2>
+    <p>URL'ler yalnızca belirli karakterleri doğrudan içerebilir. ASCII dışındaki karakterler <strong>percent-encoding</strong> (yüzde kodlama) ile ifade edilir. Örneğin:</p>
+    <ul style="margin-left:1.25rem;line-height:2.1">
+      <li><code>ş</code> → <code>%C5%9F</code></li>
+      <li><code>ğ</code> → <code>%C4%9F</code></li>
+      <li><code>ı</code> → <code>%C4%B1</code></li>
+      <li><code>ü</code> → <code>%C3%BC</code></li>
+    </ul>
+    <p>Bu kodlu URL'ler, kullanıcılar tarafından okunaksız ve güvensiz görünür. Sosyal medyada paylaşıldığında bozuk görünebilir, kopyala-yapıştır ile aktarılırken hata oluşabilir.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Türkçe Harf Dönüşüm Tablosu</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:.92rem">
+      <thead><tr style="background:#e8f4f4"><th style="padding:.6rem;border:1px solid #ddd">Türkçe Harf</th><th style="padding:.6rem;border:1px solid #ddd">URL Karşılığı</th><th style="padding:.6rem;border:1px solid #ddd">Percent-Encoding</th></tr></thead>
       <tbody>
-        <tr><td style="padding:.5rem;border:1px solid #ddd;text-align:center">ç</td><td style="padding:.5rem;border:1px solid #ddd;text-align:center">c</td></tr>
-        <tr><td style="padding:.5rem;border:1px solid #ddd;text-align:center">ğ</td><td style="padding:.5rem;border:1px solid #ddd;text-align:center">g</td></tr>
-        <tr><td style="padding:.5rem;border:1px solid #ddd;text-align:center">ı / İ</td><td style="padding:.5rem;border:1px solid #ddd;text-align:center">i</td></tr>
-        <tr><td style="padding:.5rem;border:1px solid #ddd;text-align:center">ö</td><td style="padding:.5rem;border:1px solid #ddd;text-align:center">o</td></tr>
-        <tr><td style="padding:.5rem;border:1px solid #ddd;text-align:center">ş</td><td style="padding:.5rem;border:1px solid #ddd;text-align:center">s</td></tr>
-        <tr><td style="padding:.5rem;border:1px solid #ddd;text-align:center">ü</td><td style="padding:.5rem;border:1px solid #ddd;text-align:center">u</td></tr>
+        <tr><td style="padding:.6rem;border:1px solid #ddd;text-align:center">ç / Ç</td><td style="padding:.6rem;border:1px solid #ddd;text-align:center">c</td><td style="padding:.6rem;border:1px solid #ddd">%C3%A7 / %C3%87</td></tr>
+        <tr><td style="padding:.6rem;border:1px solid #ddd;text-align:center">ğ / Ğ</td><td style="padding:.6rem;border:1px solid #ddd;text-align:center">g</td><td style="padding:.6rem;border:1px solid #ddd">%C4%9F / %C4%9E</td></tr>
+        <tr><td style="padding:.6rem;border:1px solid #ddd;text-align:center">ı / İ</td><td style="padding:.6rem;border:1px solid #ddd;text-align:center">i</td><td style="padding:.6rem;border:1px solid #ddd">%C4%B1 / %C4%B0</td></tr>
+        <tr><td style="padding:.6rem;border:1px solid #ddd;text-align:center">ö / Ö</td><td style="padding:.6rem;border:1px solid #ddd;text-align:center">o</td><td style="padding:.6rem;border:1px solid #ddd">%C3%B6 / %C3%96</td></tr>
+        <tr><td style="padding:.6rem;border:1px solid #ddd;text-align:center">ş / Ş</td><td style="padding:.6rem;border:1px solid #ddd;text-align:center">s</td><td style="padding:.6rem;border:1px solid #ddd">%C5%9F / %C5%9E</td></tr>
+        <tr><td style="padding:.6rem;border:1px solid #ddd;text-align:center">ü / Ü</td><td style="padding:.6rem;border:1px solid #ddd;text-align:center">u</td><td style="padding:.6rem;border:1px solid #ddd">%C3%BC / %C3%9C</td></tr>
       </tbody>
     </table>
-    <p style="margin-top:1.5rem"><a href="index.html" style="color:#01696f;font-weight:600">← Slug oluşturmaya başla</a></p>
+
+    <h2 style="margin:1.75rem 0 .75rem">WordPress ve CMS'lerde Türkçe URL</h2>
+    <p>WordPress gibi CMS'ler varsayılan olarak Türkçe karakterleri percent-encode ederek URL oluşturabilir. Bunu önlemek için:</p>
+    <ul style="margin-left:1.25rem;line-height:2.1">
+      <li><strong>WordPress:</strong> Ayarlar → Kalıcı Bağlantılar bölümünden URL yapısını özelleştirin. Türkçe karakterleri otomatik dönüştüren eklentiler (örn. Yoast SEO) kullanın.</li>
+      <li><strong>Manuel yayın:</strong> Yazıyı yayınlamadan önce slug alanını Türkçe karaktersiz doldurun.</li>
+      <li><strong>Kod ile:</strong> PHP'de <code>remove_accents()</code>, JavaScript'te bizim slug oluşturucumuz gibi dönüşüm fonksiyonları kullanın.</li>
+    </ul>
+
+    <h2 style="margin:1.75rem 0 .75rem">Google Türkçe Karakterleri Anlıyor mu?</h2>
+    <p>Teknik olarak Google, percent-encoded URL'leri okuyabilir. Ancak <strong>anlamsal olarak</strong> <code>/seo-rehberi</code> ile <code>/seo-rehberi-turkce</code> arasındaki farkı daha net kavrar. Türkçe karakterlerin temizlenmiş hali hem daha kısa hem de uluslararası ortamlarda daha taşınabilir URL'ler üretir.</p>
+
+    <div style="background:#e8f4f4;border-radius:10px;padding:1.25rem;margin-top:2rem">
+      <strong>Otomatik dönüşüm için:</strong> Aracımız tüm Türkçe karakterleri anında dönüştürür.<br>
+      <a href="index.html" style="color:#01696f;font-weight:600">→ SEO Slug Oluşturucu'yu Kullan</a>
+    </div>
+
+    <p style="margin-top:1.75rem"><a href="blog1.html" style="color:#01696f">← Önceki: Slug Nedir?</a> · <a href="blog3.html" style="color:#01696f">Sonraki: SEO Dostu URL Yapısı →</a></p>
   </main>
-  <footer class="site-footer"><div class="container"><p>&copy; 2026 <a href="https://covrixa.com" target="_blank" rel="noopener">Covrixa</a></p></div></footer>
+  <footer class="site-footer"><div class="container"><p>© 2026 <a href="https://covrixa.com" target="_blank" rel="noopener">Covrixa</a></p></div></footer>
 </body>
 </html>
