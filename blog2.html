@@ -13,17 +13,21 @@
   <main class="container" style="padding-top:2rem;padding-bottom:3rem;max-width:740px">
     <div style="font-size:.8rem;color:#888;margin-bottom:1rem">Mayıs 2026 · 5 dk okuma · Teknik SEO</div>
     <h1 style="color:#01696f;margin-bottom:1rem">URL'lerde Türkçe Karakter Sorunları ve Çözümleri</h1>
-    <p>Türkçe içerik üreten web sitelerinin karşılaştığı en yaygın teknik sorunlardan biri URL'lerdeki Türkçe karakterlerdir. ş, ğ, ç, ö, ü ve ı harfleri standart ASCII karakter setinin dışında olduğundan URL'lerde özel bir kodlamaya dönüşür.</p>
+
+    <p>Türkçe içerik üreten web sitelerinin karşılaştığı en yaygın teknik sorunlardan biri URL'lerdeki Türkçe karakterlerdir. ş, ğ, ç, ö, ü ve ı harfleri standart ASCII karakter setinin dışında olduğundan URL'lerde özel bir kodlamaya dönüşür. Bu durum hem kullanıcı deneyimini olumsuz etkiler hem de SEO performansını düşürebilir. Özellikle Türkiye'de hizmet veren e-ticaret siteleri, bloglar ve kurumsal web siteleri bu sorunla sıkça karşılaşmaktadır. Peki Türkçe karakterler URL'lerde neden sorun çıkarır ve bu sorunu nasıl çözebiliriz?</p>
 
     <h2 style="margin:1.75rem 0 .75rem">Percent-Encoding Nedir?</h2>
-    <p>URL'ler yalnızca belirli karakterleri doğrudan içerebilir. ASCII dışındaki karakterler <strong>percent-encoding</strong> (yüzde kodlama) ile ifade edilir. Örneğin:</p>
+    <p>URL'ler yalnızca belirli karakterleri doğrudan içerebilir. ASCII dışındaki karakterler <strong>percent-encoding</strong> (yüzde kodlama) ile ifade edilir. Bu kodlama sisteminde her karakter, UTF-8 byte değerinin yüzde işareti (%) ile ifade edilmesiyle oluşur. Örneğin:</p>
     <ul style="margin-left:1.25rem;line-height:2.1">
       <li><code>ş</code> → <code>%C5%9F</code></li>
       <li><code>ğ</code> → <code>%C4%9F</code></li>
       <li><code>ı</code> → <code>%C4%B1</code></li>
       <li><code>ü</code> → <code>%C3%BC</code></li>
     </ul>
-    <p>Bu kodlu URL'ler, kullanıcılar tarafından okunaksız ve güvensiz görünür. Sosyal medyada paylaşıldığında bozuk görünebilir, kopyala-yapıştır ile aktarılırken hata oluşabilir.</p>
+    <p>Bu kodlu URL'ler, kullanıcılar tarafından okunaksız ve güvensiz görünür. Sosyal medyada paylaşıldığında bozuk görünebilir, kopyala-yapıştır ile aktarılırken hata oluşabilir. Ayrıca bu tür URL'ler e-posta yoluyla gönderildiğinde bazı e-posta istemcilerinde düzgün görüntülenmeyebilir. Kullanıcılar güvenlik endişesiyle bu tür URL'leri tıklamaktan kaçınabilir, bu da organik trafik kaybına yol açar.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Türkçe Karakterler Neden Sorun Çıkarır?</h2>
+    <p>Türkçe karakterlerin URL'lerde sorun çıkarmasının birkaç temel nedeni vardır. Birincisi, Türkçe karakterler ASCII tablosunda yer almadığı için her platformda aynı şekilde yorumlanmaz. İkincisi, farklı işletim sistemleri ve web sunucuları Türkçe karakterleri farklı şekillerde kodlayabilir. Örneğin bir Windows sunucusu ile bir Linux sunucusu aynı Türkçe karakteri farklı byte dizileriyle temsil edebilir. Bu durum, özellikle site taşıma veya platform değiştirme işlemlerinde ciddi URL sorunlarına yol açar. Üçüncü olarak, bazı eski web tarayıcıları ve proxy sunucuları percent-encoded URL'leri doğru şekilde çözümleyemez ve sayfa bulunamadı (404) hatası verebilir.</p>
 
     <h2 style="margin:1.75rem 0 .75rem">Türkçe Harf Dönüşüm Tablosu</h2>
     <table style="width:100%;border-collapse:collapse;font-size:.92rem">
@@ -37,17 +41,21 @@
         <tr><td style="padding:.6rem;border:1px solid #ddd;text-align:center">ü / Ü</td><td style="padding:.6rem;border:1px solid #ddd;text-align:center">u</td><td style="padding:.6rem;border:1px solid #ddd">%C3%BC / %C3%9C</td></tr>
       </tbody>
     </table>
+    <p style="margin-top:.75rem">Yukarıdaki tabloda görüldüğü gibi, her Türkçe karakter iki farklı şekilde URL'de yer alabilir: ya ASCII karşılığına dönüştürülerek ya da percent-encoding ile kodlanarak. SEO açısından önerilen yöntem, karakterleri ASCII karşılıklarına dönüştürmektir. Bu sayede URL'ler hem daha kısa olur hem de her platformda tutarlı görüntülenir.</p>
 
-    <h2 style="margin:1.75rem 0 .75rem">WordPress ve CMS'lerde Türkçe URL</h2>
-    <p>WordPress gibi CMS'ler varsayılan olarak Türkçe karakterleri percent-encode ederek URL oluşturabilir. Bunu önlemek için:</p>
+    <h2 style="margin:1.75rem 0 .75rem">WordPress ve CMS'lerde Türkçe URL Yönetimi</h2>
+    <p>WordPress gibi CMS'ler varsayılan olarak Türkçe karakterleri percent-encode ederek URL oluşturabilir. Bunu önlemek için çeşitli yöntemler bulunur:</p>
     <ul style="margin-left:1.25rem;line-height:2.1">
-      <li><strong>WordPress:</strong> Ayarlar → Kalıcı Bağlantılar bölümünden URL yapısını özelleştirin. Türkçe karakterleri otomatik dönüştüren eklentiler (örn. Yoast SEO) kullanın.</li>
-      <li><strong>Manuel yayın:</strong> Yazıyı yayınlamadan önce slug alanını Türkçe karaktersiz doldurun.</li>
-      <li><strong>Kod ile:</strong> PHP'de <code>remove_accents()</code>, JavaScript'te bizim slug oluşturucumuz gibi dönüşüm fonksiyonları kullanın.</li>
+      <li><strong>WordPress:</strong> Ayarlar → Kalıcı Bağlantılar bölümünden URL yapısını özelleştirin. Türkçe karakterleri otomatik dönüştüren eklentiler (Yoast SEO, Rank Math) kullanarak slug'ların otomatik temizlenmesini sağlayabilirsiniz.</li>
+      <li><strong>Manuel yayın:</strong> Yazıyı yayınlamadan önce slug alanını Türkçe karaktersiz doldurun. Bu en güvenilir yöntemdir çünkü hiçbir otomasyon manuel müdahale kadar isabetli olamaz.</li>
+      <li><strong>Kod ile:</strong> PHP'de <code>remove_accents()</code> fonksiyonu, JavaScript'te hazırladığımız slug oluşturucu gibi araçlar kullanarak otomatik dönüşüm yapabilirsiniz.</li>
     </ul>
 
     <h2 style="margin:1.75rem 0 .75rem">Google Türkçe Karakterleri Anlıyor mu?</h2>
-    <p>Teknik olarak Google, percent-encoded URL'leri okuyabilir. Ancak <strong>anlamsal olarak</strong> <code>/seo-rehberi</code> ile <code>/seo-rehberi-turkce</code> arasındaki farkı daha net kavrar. Türkçe karakterlerin temizlenmiş hali hem daha kısa hem de uluslararası ortamlarda daha taşınabilir URL'ler üretir.</p>
+    <p>Teknik olarak Google, percent-encoded URL'leri okuyabilir ve içeriği doğru şekilde indeksleyebilir. Ancak <strong>kullanıcı deneyimi açısından</strong> <code>/seo-rehberi</code> ile <code>/seo-rehberi-turkce</code> arasındaki fark çok daha belirgindir. Türkçe karakterlerin temizlenmiş hali hem daha kısa hem de uluslararası ortamlarda daha taşınabilir URL'ler üretir. Ayrıca temiz URL'ler sosyal medyada paylaşıldığında daha profesyonel görünür ve tıklanma oranı artar. Google'ın kendisi de URL'lerde okunabilirliği bir kullanıcı deneyimi faktörü olarak değerlendirmektedir.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Alternatif Çözüm Yöntemleri</h2>
+    <p>Türkçe karakter sorununu çözmek için birkaç farklı yöntem kullanılabilir. Sunucu tarafında mod_rewrite veya IIS Rewrite modülü kullanarak URL'leri otomatik olarak temizleyebilirsiniz. CDN hizmetleri genellikle URL'lerdeki özel karakterleri otomatik olarak dönüştürme özelliği sunar. Bunun yanında, veritabanı seviyesinde bir dönüşüm tablosu oluşturarak kayıt ekleme sırasında otomatik dönüşüm yapmak da etkili bir yöntemdir. Hangi yöntemi kullanırsanız kullanın, önemli olan URL'lerinizin tüm platformlarda tutarlı ve okunabilir olmasını sağlamaktır. Türkçe karakter dönüşümü, web sitenizin global erişilebilirliği için atabileceğiniz en önemli adımlardan biridir.</p>
 
     <div style="background:#e8f4f4;border-radius:10px;padding:1.25rem;margin-top:2rem">
       <strong>Otomatik dönüşüm için:</strong> Aracımız tüm Türkçe karakterleri anında dönüştürür.<br>
