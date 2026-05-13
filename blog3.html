@@ -13,42 +13,52 @@
   <main class="container" style="padding-top:2rem;padding-bottom:3rem;max-width:740px">
     <div style="font-size:.8rem;color:#888;margin-bottom:1rem">Mayıs 2026 · 6 dk okuma · Teknik SEO</div>
     <h1 style="color:#01696f;margin-bottom:1rem">SEO Dostu URL Yapısı: Google'ın Önerileri</h1>
-    <p>Google, URL'lerin kullanıcı dostu ve anlamlı olmasını her zaman ön plana çıkarmıştır. Karmaşık parametre zincirleri ve anlamsız rakam dizileri yerine okunabilir, hiyerarşik URL yapıları hem arama motorlarına hem de kullanıcılara daha iyi bir deneyim sunar.</p>
 
-    <h2 style="margin:1.75rem 0 .75rem">Temel URL Yapısı</h2>
+    <p>Google, URL'lerin kullanıcı dostu ve anlamlı olmasını her zaman ön plana çıkarmıştır. Karmaşık parametre zincirleri ve anlamsız rakam dizileri yerine okunabilir, hiyerarşik URL yapıları hem arama motorlarına hem de kullanıcılara daha iyi bir deneyim sunar. SEO dostu bir URL stratejisi oluşturmak, uzun vadede organik sıralamalarda belirleyici bir faktör haline gelir. Peki Google'ın önerdiği URL yapısı tam olarak nasıl olmalıdır?</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Temel URL Yapısı Bileşenleri</h2>
     <p>SEO açısından ideal bir URL şu bileşenlerden oluşur:</p>
     <p style="background:#f5f5f5;padding:.85rem 1rem;border-radius:8px;font-family:monospace;font-size:.95rem">https://domain.com / kategori / alt-kategori / sayfa-basligi</p>
     <ul style="margin-left:1.25rem;line-height:2.1;margin-top:.75rem">
-      <li><strong>Protokol:</strong> Her zaman HTTPS. HTTP kullanan siteler Chrome'da "Güvensiz" uyarısı alır.</li>
-      <li><strong>Domain:</strong> Kısa, marka adını yansıtan, .com veya .com.tr tercih edilebilir.</li>
-      <li><strong>Klasör yapısı:</strong> İçerik hiyerarşisini yansıtmalı; çok derin olmamalı (max 3-4 seviye).</li>
-      <li><strong>Slug:</strong> Küçük harf, tire ayraçlı, anahtar kelime içermeli.</li>
+      <li><strong>Protokol:</strong> Her zaman HTTPS. HTTP kullanan siteler Chrome'da "Güvensiz" uyarısı alır ve bu durum ziyaretçi güvenini ciddi şekilde zedeler. HTTPS aynı zamanda 2014'ten beri Google'ın resmi sıralama faktörlerinden biridir.</li>
+      <li><strong>Domain:</strong> Kısa, marka adını yansıtan, .com veya .com.tr tercih edilebilir. Domain seçimi URL yapısının temelini oluşturur ve marka bilinirliğini etkiler.</li>
+      <li><strong>Klasör yapısı:</strong> İçerik hiyerarşisini yansıtmalı; çok derin olmamalı (max 3-4 seviye). Derin URL yapıları Google botlarının sayfayı taramasını zorlaştırır ve link gücünün dağılmasına neden olur.</li>
+      <li><strong>Slug:</strong> Küçük harf, tire ayraçlı, anahtar kelime içermeli. Slug uzunluğu 3-5 kelimeyi ve 60 karakteri geçmemelidir.</li>
     </ul>
 
     <h2 style="margin:1.75rem 0 .75rem">Google'ın Resmi Önerileri</h2>
-    <p>Google Search Central belgelerine göre:</p>
+    <p>Google Search Central belgelerine göre URL yapılandırmasında şu kurallara dikkat edilmelidir:</p>
     <ul style="margin-left:1.25rem;line-height:2.1">
-      <li>URL'ler içeriği tanımlayan kelimeler içermeli</li>
-      <li>Tek bir canonical URL kullanılmalı (www vs non-www, trailing slash vs no-slash)</li>
-      <li>Büyük-küçük harf tutarlılığı sağlanmalı; Google bunları farklı sayfalar olarak algılayabilir</li>
-      <li>Oturum ID'leri URL'de bulunmamalı; bunun yerine cookie kullanılmalı</li>
-      <li>Sayfalama için <code>?page=2</code> yerine <code>/sayfa/2</code> tercih edilebilir</li>
+      <li>URL'ler içeriği tanımlayan kelimeler içermeli; anlamsız ID veya parametre kullanımından kaçınılmalıdır</li>
+      <li>Tek bir canonical URL kullanılmalı (www vs non-www, trailing slash vs no-slash arasında tutarlılık sağlanmalıdır)</li>
+      <li>Büyük-küçük harf tutarlılığı sağlanmalı; Google <code>/Seo-Rehberi</code> ile <code>/seo-rehberi</code>'ni farklı sayfalar olarak algılayabilir</li>
+      <li>Oturum ID'leri URL'de bulunmamalı; bunun yerine cookie kullanılmalıdır</li>
+      <li>Sayfalama için <code>?page=2</code> yerine <code>/sayfa/2</code> tercih edilebilir; bu hem daha temiz hem daha akılda kalıcıdır</li>
+      <li>Alt çizgi (_) yerine tire (-) kullanılmalı; Google alt çizgiyi kelime ayracı olarak algılamaz</li>
     </ul>
 
-    <h2 style="margin:1.75rem 0 .75rem">Kaçınılması Gereken URL Yapıları</h2>
+    <h2 style="margin:1.75rem 0 .75rem">İyi URL ve Kötü URL Karşılaştırması</h2>
     <table style="width:100%;border-collapse:collapse;font-size:.9rem">
-      <thead><tr style="background:#fde8e8"><th style="padding:.55rem;border:1px solid #ddd">Kötü Örnek</th><th style="padding:.55rem;border:1px solid #ddd">Neden Kötü?</th></tr></thead>
+      <thead><tr style="background:#e8f4f4"><th style="padding:.55rem;border:1px solid #ddd">Kötü URL</th><th style="padding:.55rem;border:1px solid #ddd">İyi URL</th><th style="padding:.55rem;border:1px solid #ddd">Değerlendirme</th></tr></thead>
       <tbody>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">/p?id=4821&cat=12&ref=newsletter</td><td style="padding:.55rem;border:1px solid #ddd">Anlamsız parametreler, içerik hakkında bilgi vermez</td></tr>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">/2026/05/13/bu-yaz-cok-uzun-bir-baslik-var-burada</td><td style="padding:.55rem;border:1px solid #ddd">Tarih gereksiz, başlık çok uzun</td></tr>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">/Blog_Post_SEO_Rehberi_2026.html</td><td style="padding:.55rem;border:1px solid #ddd">Alt çizgi ve büyük harf, uzantı görünümü</td></tr>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">/sayfa/alt-sayfa/icerik/detay/bolum/parca</td><td style="padding:.55rem;border:1px solid #ddd">Çok derin hiyerarşi, Google link gücünü dağıtır</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">/p?id=4821&cat=12&ref=newsletter</td><td style="padding:.55rem;border:1px solid #ddd">/seo-rehberi</td><td style="padding:.55rem;border:1px solid #ddd">Parametreler temizlenmiş</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">/2026/05/13/cok-uzun-bir-baslik</td><td style="padding:.55rem;border:1px solid #ddd">/seo-rehberi</td><td style="padding:.55rem;border:1px solid #ddd">Tarih kaldırılmış</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">/Blog_Post_SEO_Rehberi_2026.html</td><td style="padding:.55rem;border:1px solid #ddd">/seo-rehberi</td><td style="padding:.55rem;border:1px solid #ddd">Alt çizgi ve uzantı yok</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">/sayfa/alt/icerik/detay/bolum</td><td style="padding:.55rem;border:1px solid #ddd">/seo-rehberi</td><td style="padding:.55rem;border:1px solid #ddd">Derinlik azaltılmış</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">/seo-Rehberi-2026-guncel</td><td style="padding:.55rem;border:1px solid #ddd">/guncel-seo-rehberi</td><td style="padding:.55rem;border:1px solid #ddd">Tutarlı küçük harf</td></tr>
       </tbody>
     </table>
 
-    <h2 style="margin:1.75rem 0 .75rem">HTTPS ve Canonical Tag</h2>
-    <p>URL optimizasyonunun en kritik iki unsuru HTTPS ve canonical tag'dir. HTTPS 2014'ten beri Google'ın sıralama faktörlerinden biridir. Canonical tag ise aynı içeriğin farklı URL'lerde yayınlandığı durumlarda Google'a hangi URL'nin asıl sayfa olduğunu bildirir:</p>
+    <h2 style="margin:1.75rem 0 .75rem">Hiyerarşik URL Yapısı</h2>
+    <p>İyi bir URL hiyerarşisi, sitenin bilgi mimarisini yansıtmalıdır. Örneğin bir blog sitesi için URL yapısı <code>/blog/kategori/yazi-basligi</code> şeklinde olabilir. Bu yapı hem kullanıcıya sayfanın site içindeki konumu hakkında fikir verir hem de Google'a içerik hiyerarşisini gösterir. Ancak çok derin hiyerarşilerden kaçınılmalıdır. Ana sayfadan itibaren 4 tıklamadan daha derinde bulunan sayfalar Google botları tarafından daha az taranır ve indekslenme olasılığı düşer. İdeal URL derinliği 2-3 seviyedir. Daha derin yapılar için breadcrumb navigasyonu ekleyerek kullanıcıların ve botların sayfalar arasında gezinmesini kolaylaştırabilirsiniz.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Kaçınılması Gereken URL Yapıları</h2>
+    <p>SEO performansınızı düşürebilecek bazı URL yapılarından kesinlikle kaçınmalısınız. Dinamik parametreler, gereksiz tarih bilgisi, alt çizgi kullanımı ve çok derin klasör yapıları en yaygın hatalardandır. Ayrıca URL'de dosya uzantıları (.html, .php, .aspx) kullanmak da önerilmez çünkü bu uzantılar sayfanın teknolojisi hakkında gereksiz bilgi verir ve gelecekte teknoloji değiştirirseniz URL'leri de değiştirmek zorunda kalırsınız. Bunun yerine <code>/seo-rehberi</code> gibi uzantısız, temiz URL'ler tercih edilmelidir. Google'ın URL kesme algoritması, uzun ve karmaşık URL'leri sonuç sayfalarında kırparak gösterir, bu da tıklama oranını olumsuz etkiler.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">HTTPS ve Canonical Tag Kullanımı</h2>
+    <p>URL optimizasyonunun en kritik iki unsuru HTTPS ve canonical tag'dir. HTTPS 2014'ten beri Google'ın sıralama faktörlerinden biridir ve kullanıcı verilerinin şifrelenmesini sağlar. Canonical tag ise aynı içeriğin farklı URL'lerde yayınlandığı durumlarda Google'a hangi URL'nin asıl sayfa olduğunu bildirir:</p>
     <p style="background:#f5f5f5;padding:.85rem 1rem;border-radius:8px;font-family:monospace;font-size:.88rem">&lt;link rel="canonical" href="https://domain.com/seo-rehberi" /&gt;</p>
+    <p>Canonical tag kullanımı özellikle e-ticaret sitelerinde, filtreleme ve sıralama işlemleri sonucunda oluşan yüzlerce farklı URL'nin tek bir ana URL altında toplanmasını sağlar. Bu sayede içerik bölünmesi (duplicate content) sorununun önüne geçilir ve tüm link gücü tek bir URL'de toplanır. Ayrıca canonical tag, sayfanın mobil ve masaüstü sürümleri arasında da kullanılarak içerik bütünlüğünün korunmasına yardımcı olur.</p>
 
     <div style="background:#e8f4f4;border-radius:10px;padding:1.25rem;margin-top:2rem">
       <strong>Slug'ınızı hemen oluşturun:</strong><br>
