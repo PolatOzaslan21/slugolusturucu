@@ -38,5 +38,5 @@ function copySlug() {
     btn.textContent = 'Kopyalandı!';
     btn.style.background = '#437a22';
     setTimeout(() => { btn.textContent = 'Kopyala'; btn.style.background = ''; }, 1800);
-  });
+  }).catch(() => {});
 }
