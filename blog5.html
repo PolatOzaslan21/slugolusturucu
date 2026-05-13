@@ -13,36 +13,47 @@
   <main class="container" style="padding-top:2rem;padding-bottom:3rem;max-width:740px">
     <div style="font-size:.8rem;color:#888;margin-bottom:1rem">Mayıs 2026 · 5 dk okuma · SEO Rehberi</div>
     <h1 style="color:#01696f;margin-bottom:1rem">Slug'dan Stop Word'leri Kaldırın</h1>
-    <p>Stop word'ler (dur kelimeleri), bir cümlede bağlantı ve anlam kuran ama kendi başlarına SEO değeri taşımayan kelimelerdir. URL slug'larına dahil edildiğinde slug'ı gereksiz yere uzatır ve anahtar kelime yoğunluğunu düşürür.</p>
 
-    <h2 style="margin:1.75rem 0 .75rem">Stop Word Nedir?</h2>
-    <p>Arama motorları, arama sorgularını analiz ederken bazı kelimeleri büyük ölçüde görmezden gelir. "ve", "ile", "bir", "bu", "için", "de", "da" gibi kelimeler içerik bağlamı için önemli olsa da URL'de SEO değeri taşımaz.</p>
+    <p>Stop word'ler (dur kelimeleri), bir cümlede bağlantı ve anlam kuran ama kendi başlarına SEO değeri taşımayan kelimelerdir. URL slug'larına dahil edildiğinde slug'ı gereksiz yere uzatır ve anahtar kelime yoğunluğunu düşürür. Bu yazıda Türkçe stop word'leri, neden kaldırılmaları gerektiğini ve hangi durumlarda korunmaları gerektiğini detaylı olarak inceleyeceğiz.</p>
 
-    <h2 style="margin:1.75rem 0 .75rem">Türkçe Yaygın Stop Word'ler</h2>
+    <h2 style="margin:1.75rem 0 .75rem">Stop Word Nedir ve Neden Önemlidir?</h2>
+    <p>Arama motorları, arama sorgularını analiz ederken bazı kelimeleri büyük ölçüde görmezden gelir. "ve", "ile", "bir", "bu", "için", "de", "da" gibi kelimeler içerik bağlamı için önemli olsa da URL'de SEO değeri taşımaz. Stop word'ler aslında dilbilgisinde işlevsel kelimeler olarak adlandırılır ve cümle içinde anlamdan çok yapısal bir rol üstlenirler. Bu kelimeler URL içinde gereksiz yer kaplar ve sayfanın ana temasını zayıflatır. Örneğin <code>/en-iyi-seo-rehberi-ve-ipuclari</code> yerine <code>/en-iyi-seo-rehberi</code> kullanmak çok daha etkilidir. Stop word'leri kaldırmak, URL'nin okunabilirliğini artırır ve anahtar kelime yoğunluğunu iyileştirir.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Türkçe Yaygın Stop Word Listesi</h2>
     <table style="width:100%;border-collapse:collapse;font-size:.9rem">
-      <thead><tr style="background:#e8f4f4"><th style="padding:.55rem;border:1px solid #ddd">Kategori</th><th style="padding:.55rem;border:1px solid #ddd">Kelimeler</th></tr></thead>
+      <thead><tr style="background:#e8f4f4"><th style="padding:.55rem;border:1px solid #ddd">Kategori</th><th style="padding:.55rem;border:1px solid #ddd">Stop Word'ler</th><th style="padding:.55rem;border:1px solid #ddd">Örnek Kullanım</th></tr></thead>
       <tbody>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">Bağlaçlar</td><td style="padding:.55rem;border:1px solid #ddd">ve, ile, veya, ama, fakat, ancak, hem, ya</td></tr>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">Zarflar</td><td style="padding:.55rem;border:1px solid #ddd">çok, az, daha, en, hep, hiç, artık, zaten</td></tr>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">Zamirler</td><td style="padding:.55rem;border:1px solid #ddd">bu, şu, o, biz, siz, onlar, ben, sen</td></tr>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">Edatlar</td><td style="padding:.55rem;border:1px solid #ddd">için, ile, gibi, kadar, göre, karşı, üzere</td></tr>
-        <tr><td style="padding:.55rem;border:1px solid #ddd">Belgisiz sıfatlar</td><td style="padding:.55rem;border:1px solid #ddd">bir, bazı, birkaç, birçok, tüm, her, hiçbir</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">Bağlaçlar</td><td style="padding:.55rem;border:1px solid #ddd">ve, ile, veya, ama, fakat, ancak, hem, ya da, çünkü</td><td style="padding:.55rem;border:1px solid #ddd">seo-ve-rehberi → seo-rehberi</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">Zarflar</td><td style="padding:.55rem;border:1px solid #ddd">çok, az, daha, en, hep, hiç, artık, zaten, henüz</td><td style="padding:.55rem;border:1px solid #ddd">en-iyi-seo → seo-rehberi</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">Zamirler</td><td style="padding:.55rem;border:1px solid #ddd">bu, şu, o, biz, siz, onlar, ben, sen, kendi</td><td style="padding:.55rem;border:1px solid #ddd">bu-seo-rehberi → seo-rehberi</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">Edatlar</td><td style="padding:.55rem;border:1px solid #ddd">için, ile, gibi, kadar, göre, karşı, üzere, hakkında</td><td style="padding:.55rem;border:1px solid #ddd">seo-icin-rehber → seo-rehberi</td></tr>
+        <tr><td style="padding:.55rem;border:1px solid #ddd">Belgisiz sıfatlar</td><td style="padding:.55rem;border:1px solid #ddd">bir, bazı, birkaç, birçok, tüm, her, hiçbir, herhangi</td><td style="padding:.55rem;border:1px solid #ddd">bir-seo-rehberi → seo-rehberi</td></tr>
       </tbody>
     </table>
 
-    <h2 style="margin:1.75rem 0 .75rem">Önce / Sonra Örnekleri</h2>
+    <h2 style="margin:1.75rem 0 .75rem">Stop Word'lerin SEO Performansına Etkisi</h2>
+    <p>Stop word'lerin URL'de bulunması, anahtar kelime yoğunluğunu seyreltir ve URL'nin okunabilirliğini azaltır. Yapılan araştırmalar, stop word içermeyen URL'lerin arama motoru sonuçlarında daha iyi performans gösterdiğini ortaya koymaktadır. Bunun başlıca nedeni, stop word'lerin URL'nin karakter sayısını artırarak anahtar kelimelerin oransal önemini azaltmasıdır. Ayrıca stop word içeren URL'ler sosyal medyada paylaşıldığında gereksiz yere uzun görünür ve tıklama oranını düşürebilir. Google'ın URL'leri kırptığı noktada stop word'ler nedeniyle anahtar kelimeler kesilebilir ve URL anlamsız hale gelebilir. Bu nedenle stop word temizliği, slug optimizasyonunun önemli bir parçasıdır.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Önce / Sonra Slug Karşılaştırması</h2>
+    <p>Stop word'leri kaldırmanın slug üzerindeki etkisini aşağıdaki örneklerle daha net görebilirsiniz:</p>
     <ul style="margin-left:1.25rem;line-height:2.3">
-      <li>❌ <code>/turkce-de-seo-icin-en-iyi-bir-rehber</code><br>✅ <code>/turkce-seo-rehberi</code></li>
-      <li>❌ <code>/banka-faiz-hesaplama-araci-ile-nasil-hesaplanir</code><br>✅ <code>/banka-faiz-hesaplama</code></li>
-      <li>❌ <code>/bu-arac-ile-sifre-olusturabilirsiniz</code><br>✅ <code>/sifre-olusturucu</code></li>
+      <li>❌ <code>/turkce-de-seo-icin-en-iyi-bir-rehber</code><br>✅ <code>/turkce-seo-rehberi</code><br>🔹 7 kelimeden 3 kelimeye düştü, %57 kısalma</li>
+      <li>❌ <code>/banka-faiz-hesaplama-araci-ile-nasil-hesaplanir</code><br>✅ <code>/banka-faiz-hesaplama</code><br>🔹 7 kelimeden 3 kelimeye düştü, %58 kısalma</li>
+      <li>❌ <code>/bu-arac-ile-sifre-olusturabilirsiniz</code><br>✅ <code>/sifre-olusturucu</code><br>🔹 5 kelimeden 2 kelimeye düştü, %60 kısalma</li>
+      <li>❌ <code>/en-iyi-ucretsiz-seo-analiz-araci</code><br>✅ <code>/ucretsiz-seo-analiz-araci</code><br>🔹 5 kelimeden 4 kelimeye düştü, %20 kısalma</li>
     </ul>
 
     <h2 style="margin:1.75rem 0 .75rem">Ne Zaman Stop Word Bırakılabilir?</h2>
-    <p>Bazı durumlarda stop word kaldırmak anlam kaybına yol açabilir. Örneğin marka adları içinde geçen bağlaçlar veya kavramsal bütünlük gerektiren ifadeler için stop word'ü korumak daha doğrudur:</p>
+    <p>Bazı durumlarda stop word kaldırmak anlam kaybına yol açabilir. Örneğin marka adları içinde geçen bağlaçlar veya kavramsal bütünlük gerektiren ifadeler için stop word'ü korumak daha doğrudur. Ayrıca soru kalıpları ve belirli deyimlerde stop word'ler anlamın ayrılmaz bir parçası olabilir:</p>
     <ul style="margin-left:1.25rem;line-height:2.1">
-      <li><code>/black-and-white</code> → "and" kaldırılmamalı, marka adı</li>
+      <li><code>/black-and-white</code> → "and" kaldırılmamalı, marka adı bütünlüğü</li>
       <li><code>/ne-zaman-ne-yapilmali</code> → Soru kalıbında anlam bütünlüğü önemli</li>
+      <li><code>/bir-baskasi</code> → Birleşik ifade, stop word korunmalı</li>
     </ul>
+    <p>Genel kural olarak, stop word çıkarıldığında anlam değişmiyorsa çıkarın; anlam kaybı varsa koruyun. Slug oluşturma aracımız bu dengeyi otomatik olarak sağlar ve size en uygun slug'ı önerir.</p>
+
+    <h2 style="margin:1.75rem 0 .75rem">Otomatik Stop Word Temizleme Araçları</h2>
+    <p>Stop word'leri manuel olarak temizlemek zahmetli bir iştir, özellikle çok sayıda sayfanız varsa. Neyse ki bu işlemi otomatikleştiren birçok araç bulunmaktadır. WordPress için Yoast SEO ve Rank Math eklentileri stop word temizleme özelliği sunar. JavaScript tabanlı slug oluşturucular, PHP'deki özel fonksiyonlar veya Python betikleri ile de bu işlemi otomatize edebilirsiniz. Geliştirdiğimiz SEO Slug Oluşturucu aracı, tüm bu kuralları otomatik olarak uygulayarak size temiz, SEO dostu ve stop word içermeyen slug'lar sunar. Düzenli olarak içerik yayınlayan siteler için otomatik stop word temizleme, hem zaman kazandırır hem de tutarlı bir URL yapısı sağlar.</p>
 
     <div style="background:#e8f4f4;border-radius:10px;padding:1.25rem;margin-top:2rem">
       <strong>Aracımızla temiz slug oluşturun:</strong><br>
